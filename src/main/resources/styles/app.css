@@ -1,0 +1,186 @@
+.root {
+    -fx-font-family: "Segoe UI", "Candara", sans-serif;
+    -fx-background-color:
+        radial-gradient(focus-angle 32deg, focus-distance 16%, center 22% 10%, radius 90%, #1f2a44 0%, #141b2d 36%, #0b101c 100%),
+        linear-gradient(to bottom right, #0d1322 0%, #121829 45%, #0a0f1b 100%);
+}
+
+.header-bar {
+    -fx-background-color: rgba(18, 24, 39, 0.78);
+    -fx-background-radius: 18;
+    -fx-padding: 16 18;
+    -fx-border-radius: 18;
+    -fx-border-color: rgba(148, 163, 184, 0.24);
+    -fx-effect: dropshadow(gaussian, rgba(4, 7, 14, 0.56), 24, 0.32, 0, 8);
+}
+
+.app-title {
+    -fx-font-size: 31px;
+    -fx-font-family: "Georgia", "Cambria", serif;
+    -fx-font-weight: 700;
+    -fx-text-fill: #eef3ff;
+}
+
+.app-subtitle {
+    -fx-font-size: 13px;
+    -fx-font-weight: 500;
+    -fx-text-fill: #a7b4cc;
+}
+
+.score-pill {
+    -fx-background-color: linear-gradient(to right, rgba(45, 63, 98, 0.9), rgba(42, 55, 84, 0.88));
+    -fx-border-color: rgba(158, 175, 206, 0.32);
+    -fx-border-radius: 999;
+    -fx-background-radius: 999;
+    -fx-padding: 9 15;
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #e6ecfb;
+}
+
+.question-card {
+    -fx-background-color: rgba(18, 24, 39, 0.8);
+    -fx-background-radius: 20;
+    -fx-padding: 24;
+    -fx-spacing: 18;
+    -fx-border-radius: 20;
+    -fx-border-color: rgba(148, 163, 184, 0.25);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 30, 0.3, 0, 12);
+    -fx-max-width: 820;
+}
+
+.subject-chip {
+    -fx-background-color: linear-gradient(to right, rgba(56, 189, 248, 0.22), rgba(99, 102, 241, 0.2));
+    -fx-background-radius: 999;
+    -fx-padding: 6 12;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #c8e7ff;
+}
+
+.question-text {
+    -fx-font-size: 24px;
+    -fx-font-family: "Palatino Linotype", "Book Antiqua", serif;
+    -fx-font-weight: 600;
+    -fx-text-fill: #eef2ff;
+    -fx-line-spacing: 4px;
+}
+
+.option-button {
+    -fx-background-color: linear-gradient(to right, rgba(29, 40, 63, 0.95), rgba(33, 46, 72, 0.92));
+    -fx-border-color: rgba(151, 171, 207, 0.24);
+    -fx-border-radius: 14;
+    -fx-background-radius: 14;
+    -fx-padding: 12 16;
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #e7edff;
+    -fx-cursor: hand;
+}
+
+.option-button:hover {
+    -fx-background-color: linear-gradient(to right, rgba(51, 70, 106, 0.96), rgba(39, 59, 91, 0.95));
+    -fx-border-color: rgba(173, 194, 233, 0.45);
+}
+
+.option-button:disabled {
+    -fx-opacity: 1;
+}
+
+.option-correct {
+    -fx-background-color: linear-gradient(to right, rgba(16, 94, 77, 0.92), rgba(24, 121, 98, 0.86));
+    -fx-border-color: rgba(74, 222, 169, 0.62);
+    -fx-text-fill: #e8fff8;
+}
+
+.option-wrong {
+    -fx-background-color: linear-gradient(to right, rgba(126, 38, 64, 0.95), rgba(109, 31, 47, 0.9));
+    -fx-border-color: rgba(251, 113, 133, 0.62);
+    -fx-text-fill: #ffe8ef;
+}
+
+.feedback-text {
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #aab7cf;
+}
+
+.feedback-correct {
+    -fx-text-fill: #86efac;
+}
+
+.feedback-wrong {
+    -fx-text-fill: #fda4af;
+}
+
+.celebration-overlay {
+    -fx-background-color: rgba(255, 255, 255, 0.02);
+}
+
+.celebration-label {
+    -fx-background-color: rgba(20, 66, 71, 0.95);
+    -fx-background-radius: 999;
+    -fx-padding: 12 20;
+    -fx-font-size: 18px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #f4fffd;
+    -fx-effect: dropshadow(gaussian, rgba(5, 9, 15, 0.45), 18, 0.36, 0, 7);
+}
+
+.result-card {
+    -fx-background-color: rgba(18, 24, 39, 0.84);
+    -fx-background-radius: 22;
+    -fx-padding: 28;
+    -fx-border-radius: 22;
+    -fx-border-color: rgba(148, 163, 184, 0.27);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.62), 28, 0.33, 0, 12);
+    -fx-max-width: 620;
+}
+
+.result-heading {
+    -fx-font-size: 30px;
+    -fx-font-family: "Georgia", "Cambria", serif;
+    -fx-font-weight: 700;
+    -fx-text-fill: #f1f5ff;
+}
+
+.result-score {
+    -fx-font-size: 44px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #d6e4ff;
+}
+
+.result-percent {
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #b6c5de;
+}
+
+.result-summary {
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #a2b1c9;
+}
+
+.restart-button {
+    -fx-background-color: linear-gradient(to right, #334d96, #21656a);
+    -fx-text-fill: #eef8ff;
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-padding: 11 18;
+    -fx-background-radius: 12;
+    -fx-cursor: hand;
+}
+
+.restart-button:hover {
+    -fx-background-color: linear-gradient(to right, #3e5cac, #2c7d83);
+}
+
+.cursor-layer {
+    -fx-background-color: transparent;
+}
+
+.cursor-shadow {
+    -fx-fill: radial-gradient(center 50% 50%, radius 50%, rgba(236, 241, 248, 0.34) 0%, rgba(212, 219, 231, 0.2) 34%, rgba(180, 188, 206, 0.11) 58%, rgba(144, 152, 169, 0.0) 100%);
+    -fx-effect: dropshadow(gaussian, rgba(225, 231, 242, 0.18), 76, 0.22, 0, 0);
+}

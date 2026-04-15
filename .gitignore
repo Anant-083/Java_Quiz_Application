@@ -1,0 +1,7 @@
+target/
+dist/
+out/
+.idea/
+*.iml
+.vscode/
+.qodo/
