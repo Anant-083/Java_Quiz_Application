@@ -1,54 +1,65 @@
-# College Quiz Application (Java)
+# 🎓 Online Quiz Application
 
-A smooth JavaFX quiz app with:
-- Random college-level questions across multiple subjects
-- Header scoreboard showing live score and question count
-- Animated congratulation effect on correct answers
-- 10-question round and final result summary
-- Soft, polished visual design and transitions
+![Java](https://img.shields.io/badge/Java-17_LTS-orange?style=flat&logo=java)
+![JavaFX](https://img.shields.io/badge/JavaFX-17.0.2-blue?style=flat)
+![Maven](https://img.shields.io/badge/Maven-3.9.15-red?style=flat&logo=apachemaven)
+![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey?style=flat)
 
-## Run From Source
+> A JavaFX-based desktop quiz application built for the
+> Object Oriented Programming course at Brainware University.
+> Features randomised multi-subject MCQs, real-time feedback,
+> and score tracking — all running fully offline.
 
-Prerequisites:
-- Java 25+
-- Maven 3.9+
+---
 
-Command:
+## ✨ Features
+
+- 🎯 10 randomised questions per session across multiple subjects
+- ✅ Instant feedback — green for correct, red for wrong
+- 🎉 Celebration animation on correct answers
+- 📊 Final score screen with accuracy percentage
+- 🔄 Play again without restarting the app
+- 💻 Runs fully offline — no internet needed
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| Java JDK | 17 LTS | Core language |
+| JavaFX | 17.0.2 | GUI framework |
+| Apache Maven | 3.9.15 | Build tool |
+| Git | Latest | Version control |
+
+---
+
+## 🚀 How to Run
 
 ```bash
-mvn clean javafx:run
+# 1. Clone the repository
+git clone https://github.com/Anant-083/Online_Quiz_Application.git
+
+# 2. Navigate to project
+cd Online_Quiz_Application
+
+# 3. Build
+mvn clean install
+
+# 4. Run
+mvn javafx:run
 ```
 
-## Build Windows Executable Bundle
+---
 
-This project includes:
-- Windows executable icon: `assets/icons/quiz-app.ico`
-- JavaFX window icon: `src/main/resources/icons/quiz-app.png`
-- Build script: `scripts/build-windows-exe.ps1`
+## 📁 Project Structure
 
-Run the packaging script:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\build-windows-exe.ps1
+```
+src/main/java/com/quiz/app/
+├── QuizApp.java        # Main app + UI controller
+├── QuizEngine.java     # Quiz logic + session management
+├── QuizQuestion.java   # Question data model (Java record)
+└── QuestionBank.java   # Question pool (25 questions)
 ```
 
-Outputs:
-- Portable executable folder: `dist/windows/CollegeQuizApp/`
-- Executable launcher: `dist/windows/CollegeQuizApp/CollegeQuizApp.exe`
-- Shareable archive: `dist/CollegeQuizApp-windows.zip`
-
-### Optional: Build Installer EXE
-
-If WiX Toolset is installed and available in PATH:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\build-windows-exe.ps1 -AlsoBuildInstaller
-```
-
-Installer output will be created in `dist/windows/`.
-
-## Share With Others
-
-Share `dist/CollegeQuizApp-windows.zip`. The recipient can extract it and run `CollegeQuizApp.exe` directly without installing Java.
-
-Note: Windows executables are for Windows systems. For macOS/Linux, build on that platform with `jpackage` for native packages.
+---
