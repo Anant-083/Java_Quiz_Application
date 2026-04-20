@@ -5,10 +5,9 @@
 ![Maven](https://img.shields.io/badge/Maven-3.9.15-red?style=flat&logo=apachemaven)
 ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey?style=flat)
 
-> A JavaFX-based desktop quiz application built for the
-> Object Oriented Programming course at Brainware University.
-> Features randomised multi-subject MCQs, real-time feedback,
-> and score tracking — all running fully offline.
+> A JavaFX-based desktop quiz application featuring randomised
+> multi-subject MCQs, real-time feedback, and score tracking —
+> runs fully offline on Windows.
 
 ---
 
@@ -63,3 +62,13 @@ src/main/java/com/quiz/app/
 ```
 
 ---
+
+## 📌 Prerequisites
+
+- Java 17 JDK
+- Apache Maven 3.9+
+- Git
+
+---
+
+⭐ If you found this useful, give it a star!
