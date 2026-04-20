@@ -1,4 +1,4 @@
-# 🎓 Online Quiz Application
+# 🎓 Java Quiz Application
 
 ![Java](https://img.shields.io/badge/Java-17_LTS-orange?style=flat&logo=java)
 ![JavaFX](https://img.shields.io/badge/JavaFX-17.0.2-blue?style=flat)
@@ -6,8 +6,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey?style=flat)
 
 > A JavaFX-based desktop quiz application featuring randomised
-> multi-subject MCQs, real-time feedback, and score tracking —
-> runs fully offline on Windows.
+> multi-subject MCQs, real-time feedback, and score tracking.
 
 ---
 
@@ -18,7 +17,6 @@
 - 🎉 Celebration animation on correct answers
 - 📊 Final score screen with accuracy percentage
 - 🔄 Play again without restarting the app
-- 💻 Runs fully offline — no internet needed
 
 ---
 
@@ -37,10 +35,10 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Anant-083/Online_Quiz_Application.git
+git clone https://github.com/Anant-083/java-quiz-application.git
 
 # 2. Navigate to project
-cd Online_Quiz_Application
+cd java-quiz-application
 
 # 3. Build
 mvn clean install
