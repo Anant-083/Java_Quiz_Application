@@ -2,18 +2,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.quiz</groupId>
     <artifactId>college-quiz-app</artifactId>
     <version>1.0.0</version>
     <name>College Quiz App</name>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>25</maven.compiler.release>
-        <javafx.version>25.0.1</javafx.version>
+        <maven.compiler.release>17</maven.compiler.release>
+        <javafx.version>17.0.2</javafx.version>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -21,7 +18,6 @@
             <version>${javafx.version}</version>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
